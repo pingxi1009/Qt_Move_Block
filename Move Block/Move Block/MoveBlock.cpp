@@ -14,23 +14,24 @@ MoveBlock::MoveBlock(QWidget *parent)
 // 向上移
 void MoveBlock::MoveShang(bool clicked)
 {
-	qDebug("hello");
+	qDebug("up");
+
 }
 
 // 向下移
 void MoveBlock::MoveXia(bool clicked)
 {
-
+	qDebug("down");
 }
 
 // 向上移
 void MoveBlock::MoveZuo(bool clicked)
 {
-
+	qDebug("left");
 }
 
 // 向上移
 void MoveBlock::MoveYou(bool clicked)
 {
-
+	qDebug("right");
 }
