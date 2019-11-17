@@ -14,12 +14,12 @@ private:
 	Ui::MoveBlockClass ui;
 
 private slots:
-	// 向上
+	// 向上移
 	void MoveShang(bool clicked);
-	// 向下
+	// 向下移
 	void MoveXia(bool clicked);
-	// 向左
+	// 向左移
 	void MoveZuo(bool clicked);
-	// 向右
+	// 向右移
 	void MoveYou(bool clicked);
 };

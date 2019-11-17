@@ -1,3 +1,6 @@
-﻿  MoveBlock.cpp
+﻿  moc MoveBlock.h
+  MoveBlock.cpp
+  main.cpp
+  moc_MoveBlock.cpp
   Move Block.vcxproj -> D:\git_repo\Move Block\x64\Debug\Move Block.exe
   Move Block.vcxproj -> D:\git_repo\Move Block\x64\Debug\Move Block.pdb (Full PDB)
