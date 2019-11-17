@@ -7,6 +7,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ItemPainter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClickCell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Resource Files">
@@ -32,6 +38,12 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MoveBlock.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ItemPainter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ClickCell.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

@@ -88,6 +88,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ClickCell.cpp" />
+    <ClCompile Include="ItemPainter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MoveBlock.cpp" />
   </ItemGroup>
@@ -99,6 +101,12 @@
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="MoveBlock.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ItemPainter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ClickCell.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

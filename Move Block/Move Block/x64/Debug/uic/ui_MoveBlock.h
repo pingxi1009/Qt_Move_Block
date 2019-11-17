@@ -13,7 +13,6 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
@@ -35,7 +34,6 @@ public:
     QPushButton *pushButton_next;
     QPushButton *pushButton_up;
     QSpacerItem *horizontalSpacer;
-    QFrame *frame;
     QTableWidget *tableWidget;
     QGridLayout *gridLayout;
     QSpacerItem *horizontalSpacer_2;
@@ -54,7 +52,7 @@ public:
     {
         if (MoveBlockClass->objectName().isEmpty())
             MoveBlockClass->setObjectName(QStringLiteral("MoveBlockClass"));
-        MoveBlockClass->resize(431, 335);
+        MoveBlockClass->resize(326, 526);
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -87,33 +85,10 @@ public:
 
         verticalLayout->addLayout(horizontalLayout);
 
-        frame = new QFrame(centralWidget);
-        frame->setObjectName(QStringLiteral("frame"));
-        sizePolicy.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
-        frame->setSizePolicy(sizePolicy);
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        tableWidget = new QTableWidget(frame);
-        if (tableWidget->columnCount() < 3)
-            tableWidget->setColumnCount(3);
-        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
-        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
-        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(2, __qtablewidgetitem2);
-        if (tableWidget->rowCount() < 3)
-            tableWidget->setRowCount(3);
-        QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
-        tableWidget->setVerticalHeaderItem(0, __qtablewidgetitem3);
-        QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
-        tableWidget->setVerticalHeaderItem(1, __qtablewidgetitem4);
-        QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
-        tableWidget->setVerticalHeaderItem(2, __qtablewidgetitem5);
+        tableWidget = new QTableWidget(centralWidget);
         tableWidget->setObjectName(QStringLiteral("tableWidget"));
-        tableWidget->setGeometry(QRect(10, 10, 391, 151));
 
-        verticalLayout->addWidget(frame);
+        verticalLayout->addWidget(tableWidget);
 
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
@@ -124,6 +99,8 @@ public:
 
         pushButton_shang = new QPushButton(centralWidget);
         pushButton_shang->setObjectName(QStringLiteral("pushButton_shang"));
+        pushButton_shang->setMinimumSize(QSize(50, 50));
+        pushButton_shang->setMaximumSize(QSize(50, 50));
 
         gridLayout->addWidget(pushButton_shang, 0, 2, 1, 2);
 
@@ -137,6 +114,8 @@ public:
 
         pushButton_zuo = new QPushButton(centralWidget);
         pushButton_zuo->setObjectName(QStringLiteral("pushButton_zuo"));
+        pushButton_zuo->setMinimumSize(QSize(50, 50));
+        pushButton_zuo->setMaximumSize(QSize(50, 50));
 
         gridLayout->addWidget(pushButton_zuo, 1, 1, 1, 1);
 
@@ -146,6 +125,8 @@ public:
 
         pushButton_you = new QPushButton(centralWidget);
         pushButton_you->setObjectName(QStringLiteral("pushButton_you"));
+        pushButton_you->setMinimumSize(QSize(50, 50));
+        pushButton_you->setMaximumSize(QSize(50, 50));
 
         gridLayout->addWidget(pushButton_you, 1, 4, 1, 1);
 
@@ -155,6 +136,8 @@ public:
 
         pushButton_xia = new QPushButton(centralWidget);
         pushButton_xia->setObjectName(QStringLiteral("pushButton_xia"));
+        pushButton_xia->setMinimumSize(QSize(50, 50));
+        pushButton_xia->setMaximumSize(QSize(50, 50));
 
         gridLayout->addWidget(pushButton_xia, 2, 3, 2, 1);
 

@@ -10,6 +10,8 @@ class MoveBlock : public QMainWindow
 public:
 	MoveBlock(QWidget *parent = Q_NULLPTR);
 
+	void AddItem(QString str);
+
 private:
 	Ui::MoveBlockClass ui;
 
